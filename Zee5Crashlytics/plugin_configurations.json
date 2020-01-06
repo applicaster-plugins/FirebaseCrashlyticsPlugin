@@ -1,0 +1,21 @@
+[{
+	"plugin": {
+		"api": {
+			"class_name": "Zee5CrashlyticsPlugin.ZappZee5CrashlyticsAdapter"
+		},
+		"author_name": "admin",
+		"author_email": "rukshi.chauhan@zee.esselgroup.com",
+		"manifest_version": "0.0.1",
+		"name": "Zee5Crashlytics",
+		"description": "Crashlytics",
+		"identifier": "zee5_crashlytics",
+		"type": "general",
+		"platform": "ios",
+		"min_zapp_sdk": "13.0.0-dev",
+		"whitelisted_account_ids": [],
+		"dependency_repository_url": [],
+		"dependency_name": "",
+		"dependency_version": ""
+	},
+	"configuration_json": {}
+}]

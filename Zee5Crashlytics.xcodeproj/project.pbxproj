@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84A1BCF5239916A800B368AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1BCF4239916A800B368AF /* AppDelegate.swift */; };
+		84A1BCF8239916A800B368AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A1BCF6239916A800B368AF /* Main.storyboard */; };
+		84A1BCFF239916A800B368AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1BCFE239916A800B368AF /* ViewController.swift */; };
+		84A1BD01239916A800B368AF /* plugin_configurations.json in Resources */ = {isa = PBXBuildFile; fileRef = 84A1BD00239916A800B368AF /* plugin_configurations.json */; };
+		84A1BD04239916A900B368AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A1BD03239916A900B368AF /* Assets.xcassets */; };
+		84A1BD07239916A900B368AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A1BD05239916A900B368AF /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84A1BCF1239916A800B368AF /* Zee5Crashlytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zee5Crashlytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A1BCF4239916A800B368AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84A1BCF7239916A800B368AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A1BCFA239916A800B368AF /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../../Podfile; sourceTree = "<group>"; };
+		84A1BCFB239916A800B368AF /* Zee5Crashlytics.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = Zee5Crashlytics.podspec; path = ../../Zee5Crashlytics.podspec; sourceTree = "<group>"; };
+		84A1BCFD239916A800B368AF /* ZappZee5CrashlyticsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ZappZee5CrashlyticsAdapter.swift; path = ../../PluginClasses/ZappZee5CrashlyticsAdapter.swift; sourceTree = "<group>"; };
+		84A1BCFE239916A800B368AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84A1BD00239916A800B368AF /* plugin_configurations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = plugin_configurations.json; path = ../plugin_configurations.json; sourceTree = "<group>"; };
+		84A1BD02239916A800B368AF /* plugin_manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = plugin_manifest.json; path = ../plugin_manifest.json; sourceTree = "<group>"; };
+		84A1BD03239916A900B368AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84A1BD06239916A900B368AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84A1BD08239916A900B368AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A1BCEE239916A800B368AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84A1BCE8239916A800B368AF = {
+			isa = PBXGroup;
+			children = (
+				84A1BCF3239916A800B368AF /* Zee5Crashlytics */,
+				84A1BCF2239916A800B368AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84A1BCF2239916A800B368AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A1BCF1239916A800B368AF /* Zee5Crashlytics.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A1BCF3239916A800B368AF /* Zee5Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				84A1BCF4239916A800B368AF /* AppDelegate.swift */,
+				84A1BCF6239916A800B368AF /* Main.storyboard */,
+				84A1BCFE239916A800B368AF /* ViewController.swift */,
+				84A1BD03239916A900B368AF /* Assets.xcassets */,
+				84A1BD05239916A900B368AF /* LaunchScreen.storyboard */,
+				84A1BD08239916A900B368AF /* Info.plist */,
+				84A1BCF9239916A800B368AF /* Zapp-Resources */,
+				84A1BCFC239916A800B368AF /* PluginClasses */,
+			);
+			path = Zee5Crashlytics;
+			sourceTree = "<group>";
+		};
+		84A1BCF9239916A800B368AF /* Zapp-Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84A1BCFA239916A800B368AF /* Podfile */,
+				84A1BCFB239916A800B368AF /* Zee5Crashlytics.podspec */,
+				84A1BD00239916A800B368AF /* plugin_configurations.json */,
+				84A1BD02239916A800B368AF /* plugin_manifest.json */,
+			);
+			path = "Zapp-Resources";
+			sourceTree = "<group>";
+		};
+		84A1BCFC239916A800B368AF /* PluginClasses */ = {
+			isa = PBXGroup;
+			children = (
+				84A1BCFD239916A800B368AF /* ZappZee5CrashlyticsAdapter.swift */,
+			);
+			path = PluginClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A1BCF0239916A800B368AF /* Zee5Crashlytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A1BD0B239916A900B368AF /* Build configuration list for PBXNativeTarget "Zee5Crashlytics" */;
+			buildPhases = (
+				84A1BCED239916A800B368AF /* Sources */,
+				84A1BCEE239916A800B368AF /* Frameworks */,
+				84A1BCEF239916A800B368AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zee5Crashlytics;
+			productName = Zee5Crashlytics;
+			productReference = 84A1BCF1239916A800B368AF /* Zee5Crashlytics.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A1BCE9239916A800B368AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Rukshi Chauhan";
+				TargetAttributes = {
+					84A1BCF0239916A800B368AF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 84A1BCEC239916A800B368AF /* Build configuration list for PBXProject "Zee5Crashlytics" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84A1BCE8239916A800B368AF;
+			productRefGroup = 84A1BCF2239916A800B368AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A1BCF0239916A800B368AF /* Zee5Crashlytics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A1BCEF239916A800B368AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A1BCF8239916A800B368AF /* Main.storyboard in Resources */,
+				84A1BD07239916A900B368AF /* LaunchScreen.storyboard in Resources */,
+				84A1BD04239916A900B368AF /* Assets.xcassets in Resources */,
+				84A1BD01239916A800B368AF /* plugin_configurations.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A1BCED239916A800B368AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A1BCFF239916A800B368AF /* ViewController.swift in Sources */,
+				84A1BCF5239916A800B368AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84A1BCF6239916A800B368AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A1BCF7239916A800B368AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84A1BD05239916A900B368AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A1BD06239916A900B368AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84A1BD09239916A900B368AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84A1BD0A239916A900B368AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84A1BD0C239916A900B368AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Zee5Crashlytics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zee5.Zee5Crashlytics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84A1BD0D239916A900B368AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Zee5Crashlytics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zee5.Zee5Crashlytics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A1BCEC239916A800B368AF /* Build configuration list for PBXProject "Zee5Crashlytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A1BD09239916A900B368AF /* Debug */,
+				84A1BD0A239916A900B368AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A1BD0B239916A900B368AF /* Build configuration list for PBXNativeTarget "Zee5Crashlytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A1BD0C239916A900B368AF /* Debug */,
+				84A1BD0D239916A900B368AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A1BCE9239916A800B368AF /* Project object */;
+}

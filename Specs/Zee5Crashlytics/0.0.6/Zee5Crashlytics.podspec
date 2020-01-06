@@ -1,0 +1,49 @@
+Pod::Spec.new do |s|
+
+    s.name             = "Zee5Crashlytics"
+    s.version          = '0.0.6'
+    s.summary          = "An Example of full screen plugin for Zapp iOS."
+    s.description      = <<-DESC
+    An Example of full screen plugin for Zapp iOS.
+                         DESC
+    s.homepage         = "https://rukshi_chauhan:NyNTGU65adnbwqJcQjHb@bitbucket.org/zee5in/zee5crashlyticsplugin-ios.git"
+    s.license          = 'MIT'
+    s.author           = { "admin" => "rukshi.chauhan@zee.esselgroup.com" }
+    s.source           = { :git => "https://rukshi_chauhan:NyNTGU65adnbwqJcQjHb@bitbucket.org/zee5in/zee5crashlyticsplugin-ios.git", :tag => s.version.to_s }
+  
+    s.ios.deployment_target  = "10.0"
+    s.platform     = :ios, '10.0'
+    s.requires_arc = true
+    s.swift_version = '5.1'
+    s.prepare_command = <<-CMD
+                        require 'xcodeproj'
+                        # Get project directory path
+                        project_dir=`cd "../../"; pwd`
+                        # Get .xcodeproj file path (yes I know it's not a file)
+                        path_to_project=`find "$project_dir" -maxdepth 1 -name "*.xcodeproj" | tail -1`
+                        project = Xcodeproj::Project.open(path_to_project)
+                        main_target = project.targets.first
+                        phase = main_target.new_shell_script_build_phase("Initialize Crashlytics")
+                        phase.shell_script = "${PODS_ROOT}/Fabric/run"
+                        project.save()'
+                   CMD
+    
+   
+    s.subspec 'Core' do |c|
+      c.source_files = 'PluginClasses/**/*.{h,m,swift}'
+      c.dependency 'ZappPlugins'
+      c.dependency 'Fabric'
+      c.dependency 'Crashlytics'
+
+    end
+                  
+    s.xcconfig =  { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+                    'ENABLE_BITCODE' => 'YES',
+                    'SWIFT_VERSION' => '5.1',
+                    'OTHER_LDFLAGS' => '-framework "Crashlytics" -framework "Fabric"' 
+                  }
+                  
+    s.default_subspec = 'Core'
+                  
+  end
+  
