@@ -20,8 +20,7 @@ Pod::Spec.new do |s|
     #                     CMD
     s.script_phase = { 
      :name => 'Firebase Crashlytics',
-    #  :show_env_vars_in_log => true, 
-     :script => "${PODS_ROOT}/Fabric/run"
+     :script => "${PODS_ROOT}/Fabric/run",
      :execution_position => :after_compile 
     }
    
