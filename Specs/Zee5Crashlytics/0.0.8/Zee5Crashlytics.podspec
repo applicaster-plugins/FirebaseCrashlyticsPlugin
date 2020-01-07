@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     s.homepage         = "https://rukshi_chauhan:NyNTGU65adnbwqJcQjHb@bitbucket.org/zee5in/zee5crashlyticsplugin-ios.git"
     s.license          = 'MIT'
     s.author           = { "admin" => "rukshi.chauhan@zee.esselgroup.com" }
-    s.source           = { :git => "https://rukshi_chauhan:NyNTGU65adnbwqJcQjHb@bitbucket.org/zee5in/zee5crashlyticsplugin-ios.git", :tag => s.version.to_s }
+    s.source           = { :git => "git@github.com:applicaster-plugins/FirebaseCrashlyticsPlugin.git", :tag => s.version.to_s }
   
     s.ios.deployment_target  = "10.0"
     s.platform     = :ios, '10.0'
