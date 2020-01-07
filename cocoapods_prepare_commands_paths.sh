@@ -6,6 +6,8 @@ current_pwd="$PWD"
 
 echo "Current pwd dir is $current_pwd"
 
+pods_dir=`cd "Pods/"; pwd`
+echo "Current Pods dir is $pods_dir"
 #project_dir=`cd "../../"; pwd`
 #cd "$current_pwd"
 
